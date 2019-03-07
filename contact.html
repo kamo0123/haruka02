@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>contact | haruka's portfolio</title>
+    <link rel="shortcut icon" href="images/favicon-p.png" >
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sanitize.css">
 </head>
@@ -20,6 +22,42 @@
         </header>
         <main class="main">
             <h2>contact</h2>
+            <div class="content">
+                <section class="contact">
+                    <div class="leader">
+                        <p class="description">お問い合わせ内容をご入力ください。<br>〇営業日以内に返信させていただきます。</p>
+                        <p class="required"><span class="required-span">*</span> 入力必須項目</p>
+                    </div>
+                    <div class="contact-box">
+                        <form action="" method="post">
+                            <p class="form_name">
+                                <label>お名前<span class="required-span">*</span><br>
+                                    <input type="text" name=“nameId” size=“12” maxlength=“20” placeholder="name" required></label>
+                            </p>
+                            <p class="form_name">
+                                <label>フリガナ<span class="required-span">*</span><br>
+                                    <input type="text" name="kana" placeholder="kana" required>
+                                </label>
+                            </p>
+                            <p class="form_name">
+                                <label>メール<span class="required-span">*</span><br><input type="email" name="email" placeholder="e-mail" required></label>
+                            </p>
+                            <p class="form_name">
+                                <label>電話番号<br>
+                                    <input type="tel" name="tel" placeholder="tel"></label>
+                            </p>
+                            <p class="form_name">
+                                <label>お問い合わせ内容<span class="required-span">*</span><br>
+                                    <textarea name=“message” placeholder="message" required></textarea>
+                                </label>
+                            </p>
+                            <p class="submit">
+                                <input class="submit" type="submit" name="submit" value="送信">
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer>
         </footer>

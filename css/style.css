@@ -30,7 +30,8 @@ main {
   font: 100 15vh "Vibur";
 }
 .title span{
-  animation: blink linear infinite 7s;
+  animation: blink linear infinite 10s;
+  color: white;
 }
 @keyframes blink {
   78% {
@@ -38,23 +39,23 @@ main {
     text-shadow: inherit;
   }
   79%{
-     color: #333;
+     color: white;
   }
   80% {
     text-shadow: none;
-  }
+  }/*
   81% {
     color: inherit;
     text-shadow: inherit;
   }
   82% {
-    color: #333;
+    color: #ff3e6e;
     text-shadow: none;
   }
   83% {
     color: inherit;
     text-shadow: inherit;
-  }
+  }*/
 }
 
 /*************↑blink↑****************/
@@ -63,7 +64,8 @@ main {
 /**************************************/
 /*******************all****************/
 .wrapper {
-    background: url(../images/back06.png) no-repeat;
+    /*background: url(../images/back06.png) no-repeat;*/
+    background-color: #ccc;
     background-size: 100%;
     margin: 0 auto;
     height: 100%;
@@ -76,7 +78,7 @@ header {
     width: 15%;
     position: absolute;
     right: 8%;
-    top: 20%;
+    bottom: 20%;
 }
 li {
     font-size: 50px;
@@ -91,12 +93,12 @@ a {
 }
 a::after {
   position: absolute;
-  bottom: -4px;
+  bottom: -3px;
   left: 0;
   content: '';
   width: 100%;
-  height: 2px;
-  background: white;
+  height: 3px;
+  background: #ff3e6e;
   transform: scale(0, 1);
   transform-origin: left top;
   transition: transform .3s;
@@ -107,18 +109,7 @@ a:hover::after {
 /*************↑header↑***************/
 
 /**************main******************/
-.main {
-    margin: 0 auto;
-    padding: 0;
-    width: 55%;
-    height: 65%;
-    background-color: #fff;
-    position: relative;
-    top: 15%;
-    right: 0;
-    left: 0;
-    color: #333;
-}
+
  h2 {
     font-size: 50px;
     text-align: center;
@@ -130,6 +121,19 @@ a:hover::after {
     left: 0;
     right: 0;
     color: black;
+}
+.main {
+    margin: 0 auto;
+    padding: 0;
+    width: 55%;
+    height: 65%;
+    position: relative;
+    top: 15%;
+    right: 0;
+    left: 0;
+    color: #333;
+    border: 3px dashed #ff3e6e;
+    border-radius: 1%;
 }
 /*************↑main↑***************************/
 
@@ -144,7 +148,7 @@ a:hover::after {
     top: 35%;
     right: 0;
     left: 0;
-    color: white;
+    color: #ccc;
     text-align: center;
     width: min-content;
 }
@@ -156,8 +160,117 @@ a:hover::after {
 }
 /*****************↑page-top↑*********************/
 
-/*****************↓page-combat↓************************/
-/*****************↑page-combat↑************************/
+/*****************↓page-profile↓************************/
+.content {
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+    height: 95%;
+    position: relative;
+    top: 2%;
+    right: 0;
+    left: 0;
+    color: #ccc;
+    background: #eee;
+    border: 3px solid #eee;
+    border-radius: 1%;
+}
 
-/*****************↓page-news↓**************************/
-/*****************↑page-news↑**************************/
+.profile-illust {
+    padding: 0;
+    background: url(../images/back-round02.png) no-repeat;
+    float: left;
+    text-indent: -9999px;
+    background-size: contain;
+    width: 30%;
+    height: 95%;
+    margin: 1.5% 2% 2% 4%;
+}
+.illust-img {
+  width: 100%;
+  height: 100%;
+}
+.profile-content {
+    position: absolute;
+    top: 12%;
+    left: 38%;
+    height: 80%;
+    width: 60%;
+    font-size: 120%;
+}
+.profile-content-p {
+  margin: 1% 5% 7% 27%;
+}
+.profile-content-p:first-child {
+  color: red;
+  margin-top: 0;
+}
+
+/*****************↑page-profile↑************************/
+
+/*****************↓page-portfolio↓**************************/
+/*****************↑page-portfolio↑**************************/
+
+/*****************↓page-skill↓**************************/
+/*****************↑page-skill↑**************************/
+
+/*****************↓page-contact↓**************************/
+/*****************↑page-contact↑**************************/
+
+
+/*****************↓smart-phone↓**************************/
+@media screen and (max-width: 500px) {
+
+  .wrapper {
+    border: 5px double #ff3e6e;
+    border-radius: 5px;
+  }
+  header {
+    position: fixed;
+    bottom: 1.2%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    height: 18%;
+    width: 80%;
+  }
+  header ul {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+  header ul li {
+    font-size: 150%;
+    text-align: left;
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10%;
+  }
+  header ul li:nth-child(1) {
+    left: -1%;
+  }
+  header ul li:nth-child(2) {
+    left: 25%;
+  }
+  header ul li:nth-child(3) {
+    left: 58%;
+  }
+  header ul li:nth-child(4) {
+    left: 77%;
+  }
+  h2 {
+    top: 0;
+  }
+
+/*****************↓smart-profile↓**************************/
+  .profile-content-p {
+    margin-bottom: 0;
+  }
+/*****************↑smart-profile↑**************************/
+
+}
+/*****************↑smart-phone↑**************************/
+/********************************************************/

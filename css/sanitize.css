@@ -1,16 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Economica');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Handlee');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru');
+
 html,body {
     height: 100%;
     margin: 0;
-    color: white;
+    color: #ff3e6e;
+    font-family: /*'Indie Flower', 'Josefin Sans','Sacramento','Fredericka the Great','Handlee' */'Pacifico', 'Kosugi Maru', sans-serif;
 }
-ul, li, a, p, table, th, tr {
+ul, li, a, p, table, th, tr, h1, h2, h3, h4, h5 {
     margin: 0;
 }
 a {
     text-decoration: none;
-    color: white;
+    font-family: /*'Indie Flower', 'Josefin Sans',*/ 'Pacifico', sans-serif;
+    color: #ff3e6e;
 }
 ul, li {
     list-style-type: none;
-    color: white;
+    color: #ff3e6e;
 }
