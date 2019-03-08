@@ -24,33 +24,30 @@
             <h2>contact</h2>
             <div class="content">
                 <p class="contact-img">stamp</p>
-                <div class="content-leader">
-                    <p class="content-description">お問い合わせ内容をご入力ください。3営業日以内に返信させていただきます。</p>
-                    <p class="required"><span class="required-span">*</span> 入力必須項目</p>
+                <div class="contact-leader">
+                    <p class="contact-description">お問い合わせ内容をご入力ください。</p>
+                    <p class="contact-description">3営業日以内に返信させていただきます。</p>
                 </div>
                 <div class="contact-box">
                     <form action="" method="post">
-                        <p class="form_name">
-                            <label>お名前<span class="required-span">*</span><br>
-                                <input type="text" name=“nameId” maxlength=“20” placeholder="name" required></label>
-                        </p>
-                        <p class="form_name">
-                            <label>フリガナ<span class="required-span">*</span><br>
-                                <input type="text" name="kana" placeholder="kana" required>
+                        <div class="cp_iptxt">
+                            <label>
+                                <input type="text" name=“nameId” placeholder="name*" required>
+                                <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
                             </label>
-                        </p>
-                        <p class="form_name">
-                            <label>メール<span class="required-span">*</span><br><input type="email" name="email" placeholder="e-mail" required></label>
-                        </p>
-                        <p class="form_name">
-                            <label>電話番号<br>
-                                <input type="tel" name="tel" placeholder="tel"></label>
-                        </p>
-                        <p class="form_name">
-                            <label>お問い合わせ内容<span class="required-span">*</span><br>
-                                <textarea name=“message” placeholder="message" required></textarea>
+                        </div>
+                        <div class="cp_iptxt">
+                            <label>
+                                <input type="text" name=“nameId” placeholder="E-Mail*" required>
+                                <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
                             </label>
-                        </p>
+                        </div>
+                        <div class="cp_iptxt">
+                            <label>
+                                <input type="text" name=“message” placeholder="message*" required></input>
+                                <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                            </label>
+                        </div>
                         <p class="submit">
                             <input class="submit-b" type="submit" name="submit" value="send">
                         </p>
@@ -58,8 +55,6 @@
                 </div>
             </div>
         </main>
-        <footer>
-        </footer>
     </div>
 </body>
 
