@@ -78,20 +78,20 @@ header {
     width: 15%;
     position: absolute;
     right: 8%;
-    bottom: 20%;
+    bottom: 30%;
 }
 li {
     font-size: 50px;
     text-align: right;
     padding: 8%;
 }
-.header li a {
+.header a {
   position: relative;
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-.header li a::after {
+.header a::after {
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -103,7 +103,7 @@ li {
   transform-origin: left top;
   transition: transform .3s;
 }
-.header li a:hover::after {
+.header a:hover::after {
   transform: scale(1, 1);
 }
 /*************↑header↑***************/
@@ -149,6 +149,21 @@ main {
     border-radius: 1%;
     overflow: auto;
 }
+.main-img {
+  position: absolute;
+  left: -30%;
+  top: 65%;
+  height: 35%;
+  width: 35%;
+  text-indent: -9999px;
+  background: url(../images/cat.png) no-repeat;
+  background-size: contain;
+}
+.main-img:hover {
+  background: url(../images/cat02.png) no-repeat;
+  background-size: contain;
+  transition: 1.0s;
+}
 /*************↑main↑***************************/
 
 /****************↑all↑*************************/
@@ -159,18 +174,12 @@ main {
     position: absolute;
     margin: 0 auto;
     padding: 0;
-    top: 35%;
+    top: 25%;
     right: 0;
     left: 0;
     color: #ccc;
     text-align: center;
     width: min-content;
-}
-.title a:hover{
-    color: #eee;
-}
-.title a:hover::after {
-  transform: scale(0, 0);
 }
 .main-top {
     border: none;
@@ -201,7 +210,7 @@ main {
     font-size: 120%;
 }
 .profile-content-p {
-  margin: 1% 5% 7% 27%;
+  margin: 1% 5% 7% 32%;
 }
 .profile-content-p:first-child {
   color: red;
@@ -212,7 +221,6 @@ main {
 
 /*****************↓page-portfolio↓**************************/
 .portfolio-content {
-    overflow: none;
     margin: 0 auto;
     padding: 0;
     width: 95%;
@@ -245,23 +253,33 @@ main {
   padding: 0;
   font-size: 60%;
   text-align: left;
+  width: 100%;
 }
 .portfolio-main {
   width: 79%;
   height: 100%;
   overflow: auto;
-  margin: 0;
-  border: none;
 }
 .portfolio-main-title {
   text-align: center;
-  margin: 0 auto 5%;
+  margin: 1% auto 2%;
+  font-size: 100%
+}
+.portfolio-main-n, .portfolio-main-b, .portfolio-main-p {
+  margin: 0 3%;
+}
+.portfolio-main-p {
+  font-size: 90%;
+  font-family: 'Kosugi Maru', sans-serif;
 }
 .portfolio-main-b {
   float: left;
 }
 .portfolio-main-n {
   float: right;
+}
+.portfolio-main-subject {
+  margin: 2% 3% 0;
 }
 .portfolio-main-img01 {
   background: url(../images/portfolio01.png) no-repeat;
@@ -284,13 +302,82 @@ main {
 .portfolio-main-img07 {
   background: url(../images/portfolio07.png) no-repeat;
 }
+.portfolio-main-img08 {
+  background: url(../images/banner01.png) no-repeat;
+}
+.portfolio-main-img09 {
+  background: url(../images/banner02.png) no-repeat;
+}
+.portfolio-main-img10 {
+  background: url(../images/banner03.png) no-repeat;
+}
+.portfolio-main-img11 {
+  background: url(../images/banner04.png) no-repeat;
+}
+.portfolio-main-img12 {
+  background: url(../images/banner05.png) no-repeat;
+}
+.portfolio-main-img13 {
+  background: url(../images/banner06.png) no-repeat;
+}
+.portfolio-main-img08,
+.portfolio-main-img09, .portfolio-main-img10, .portfolio-main-img11 {
+  display: inline-block;
+  background-size: contain;
+  width: 35%;
+  height: 40%;
+  text-indent: -9999px;
+  margin: 2% 0 3% 15%;
+}
+.portfolio-main-img09, .portfolio-main-img11 {
+  margin-left: 0;
+}
+.portfolio-main-img12{
+  width: 80%;
+  height: 30%;
+  margin: 1.5% 0 1.8% 8%;
+  display: inline-block;
+  background-size: contain;
+  text-indent: -9999px;
+}
+.portfolio-main-img13 {
+  width: 60%;
+  height: 35%;
+  margin: 3% 0 0 17%;
+  display: inline-block;
+  background-size: contain;
+  text-indent: -9999px;
+}
 .portfolio-main-img01, .portfolio-main-img02, .portfolio-main-img03, .portfolio-main-img04, .portfolio-main-img05, .portfolio-main-img06, .portfolio-main-img07 {
   background-size: contain;
-  margin: 0 auto;
-  width: 80%;
+  margin: 0 auto 2%;
+  width: 50%;
   height: 40%;
   text-indent: -9999px;
 }
+.portfolio-main-img14 {
+  background: url(../images/wireframe01.png) no-repeat;
+}
+.portfolio-main-img15 {
+  background: url(../images/wireframe02.png) no-repeat;
+}
+.portfolio-main-img16 {
+  background: url(../images/wireframe03.png) no-repeat;
+}
+.wireframe-main {
+  height: 100%;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+.portfolio-main-img14, .portfolio-main-img15, .portfolio-main-img16 {
+  width: 28%;
+  height: 70%;
+  margin: 2% 1.5%;
+  display: inline-flex;
+  text-indent: -9999px;
+  background-size: contain;
+}
+
 /*accordion*/
 .accbox {
     margin: 2em 0;
@@ -325,13 +412,25 @@ main {
 
 .cssacc:checked + .accshow {
     height: auto;
-    padding: 5px;
-    background: #eaeaea;
+    padding: 0 7%;
     opacity: 1;
 }
 /*****************↑page-portfolio↑**************************/
 
 /*****************↓page-skill↓**************************/
+h4 {
+  margin-top: 1%;
+  font-size: 90%;
+  font-weight: bold;
+}
+.skill-main {
+  margin: 0 0 2% 2%;
+  font-size: 90%;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+.skills {
+  margin: 1%;
+}
 /*****************↑page-skill↑**************************/
 
 /*****************↓page-contact↓**************************/
