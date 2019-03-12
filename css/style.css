@@ -70,7 +70,6 @@
     height: 100%;
     position: relative;
 }
-
 /**************header****************/
 header {
     height: 50%;
@@ -132,6 +131,9 @@ main {
     color: #333;
     border: 3px dashed #ff3e6e;
     border-radius: 1%;
+}
+.main a:hover {
+  color: #aaa;
 }
 .content {
     margin: 0 auto;
@@ -271,6 +273,7 @@ main {
 .portfolio-main-p {
   font-size: 90%;
   font-family: 'Kosugi Maru', sans-serif;
+  margin-bottom: 10%;
 }
 .portfolio-main-b {
   float: left;
@@ -409,7 +412,6 @@ main {
     opacity: 0;
     transition: 0.8s;
 }
-
 .cssacc:checked + .accshow {
     height: auto;
     padding: 0 7%;
@@ -579,10 +581,14 @@ form {
     width: 60%;
     margin: 10% auto;
   }
-  .portfolio-main-img12, .portfolio-main-img13 {
+  .portfolio-main-img12 {
     width: 98%;
     height: 20%;
     margin: 0;
+  }
+  .portfolio-main-img13 {
+    width: 70%;
+    height: 20%;
   }
   .portfolio-main-img14, .portfolio-main-img15, .portfolio-main-img16 {
     width: 60%;
@@ -745,6 +751,9 @@ main {
   .portfolio-main-img05, .portfolio-main-img06, .portfolio-main-img07 {
     margin-bottom: 11%;
   }
+  .accbox {
+    margin: 0;
+  }
   .accbox label {
     margin: 0;
     padding: 10% 0;
@@ -765,5 +774,14 @@ label, input {
   }
   header ul li {
     font-size: 120%;
+  }
+  .accbox, .accbox label, .accbox a {
+    font-size: 80%;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  .contact-leader {
+    font-size: 65%;
   }
 }
