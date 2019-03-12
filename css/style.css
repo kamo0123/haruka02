@@ -29,6 +29,9 @@ main {
   font-family: 'Srisakdi', cursive,'Indie Flower', cursive,'Josefin Sans', sans-serif;
   font: 100 15vh "Vibur";
 }
+.title-p {
+  display: none;
+}
 .title span{
   animation: blink linear infinite 10s;
   color: white;
@@ -143,7 +146,7 @@ main {
     top: 2%;
     right: 0;
     left: 0;
-    color: #ccc;
+    color: #aaa;
     background: #eee;
     border: 3px solid #eee;
     border-radius: 1%;
@@ -263,7 +266,8 @@ main {
 .portfolio-main-title {
   text-align: center;
   margin: 1% auto 2%;
-  font-size: 100%
+  font-size: 100%;
+  color: #888;
 }
 .portfolio-main-n, .portfolio-main-b, .portfolio-main-p {
   margin: 0 3%;
@@ -320,6 +324,13 @@ main {
 .portfolio-main-img13 {
   background: url(../images/banner06.png) no-repeat;
 }
+.portfolio-main-img01, .portfolio-main-img02, .portfolio-main-img03, .portfolio-main-img04, .portfolio-main-img05, .portfolio-main-img06, .portfolio-main-img07 {
+  background-size: contain;
+  margin: 15% auto;
+  width: 50%;
+  height: 40%;
+  text-indent: -9999px;
+}
 .portfolio-main-img08,
 .portfolio-main-img09, .portfolio-main-img10, .portfolio-main-img11 {
   display: inline-block;
@@ -346,13 +357,6 @@ main {
   margin: 3% 0 0 17%;
   display: inline-block;
   background-size: contain;
-  text-indent: -9999px;
-}
-.portfolio-main-img01, .portfolio-main-img02, .portfolio-main-img03, .portfolio-main-img04, .portfolio-main-img05, .portfolio-main-img06, .portfolio-main-img07 {
-  background-size: contain;
-  margin: 0 auto 2%;
-  width: 50%;
-  height: 40%;
   text-indent: -9999px;
 }
 .portfolio-main-img14 {
@@ -430,6 +434,7 @@ h4 {
 }
 .skills {
   margin: 1%;
+  color: black;
 }
 /*****************↑page-skill↑**************************/
 
@@ -495,6 +500,115 @@ form {
     bottom: 15%;
     right: 0;
 }
+/********************************************************/
+/*****************↓tablet↓**************************/
+@media screen and (max-width: 1050px) {
+  .wrapper {
+    border: 5px double #ff3e6e;
+    border-radius: 5px;
+    height: 98.5%;
+  }
+/******************************all↓************************/
+/*****************↓smart-header↓**************************/
+  header {
+    position: fixed;
+    bottom: 1.2%;
+    right: 0;
+    height: 10%;
+    width: 80%;
+    margin-right: 2%;
+  }
+  header ul {
+    display: flex;
+    padding: 0;
+  }
+  header ul li {
+    text-align: left;
+    padding: 0;
+    margin: 0 auto;
+    bottom: 10%;
+  }
+  h2 {
+    top: 0;
+  }
+  .main-img {
+    top: 105%;
+    left: -37%;
+    width: 25%;
+    height: 25%;
+  }
+  .title, .title a {
+    font: 100 8vh 'Pacifico';
+  }
+    .profile-content {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    height: 70%;
+    width: 80%;
+    font-size: 120%;
+    margin: 0 auto;
+  }
+  .profile-illust {
+    background: url(../images/back-round04.png) no-repeat;
+    width: 90%;
+    height: 30%;
+    background-size: contain;
+  }
+  .portfolio-main-img01, .portfolio-main-img02, .portfolio-main-img03, .portfolio-main-img04, .portfolio-main-img05, .portfolio-main-img06, .portfolio-main-img07 {
+    width: 90%;
+    height: 38%;
+    margin-bottom: 0;
+  }
+  .portfolio-main-img01, .portfolio-main-img02, .portfolio-main-img03, .portfolio-main-img04 {
+    height: 35%;
+  }
+  .portfolio-main-img08, .portfolio-main-img09, .portfolio-main-img09, .portfolio-main-img10, .portfolio-main-img11 {
+    display: block;
+    height: 30%;
+    width: 60%;
+    margin: 10% auto;
+  }
+  .portfolio-main-img12, .portfolio-main-img13 {
+    width: 98%;
+    height: 20%;
+    margin: 0;
+  }
+  .portfolio-main-img14, .portfolio-main-img15, .portfolio-main-img16 {
+    width: 60%;
+    height: 60%;
+    margin: 10% auto;
+    display: block;
+  }
+  .portfolio-main-p {
+    width: 90%;
+  }
+  .skill-title {
+    margin-top: 7%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .skill-main {
+    width: 75%;
+    margin: 0 auto 4%;
+  }
+  .skill-description {
+    margin-left: 8%;
+    margin-bottom: 1%;
+  }
+  form {
+    left: 13%;
+  }
+  .contact-leader {
+    margin: 20% 0 0 13%;
+  }
+  .submit {
+    right: 5%;
+  }
+/*****************↑tablet↑**************************/
+}
+/********************************************************/
 
 /********************************************************/
 /*****************↓smart-phone↓**************************/
@@ -512,36 +626,23 @@ form {
     bottom: 1.2%;
     right: 0;
     left: 0;
-    margin: 0 auto;
-    height: 18%;
-    width: 80%;
+    height: 10%;
+    width: 98%;
+    margin-right: 3%;
   }
   header ul {
     display: flex;
     padding: 0;
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
   }
   header ul li {
     font-size: 150%;
     text-align: left;
     padding: 0;
     margin: 0 auto;
-    position: absolute;
     bottom: 10%;
   }
   header ul li:nth-child(1) {
-    left: -1%;
-  }
-  header ul li:nth-child(2) {
-    left: 25%;
-  }
-  header ul li:nth-child(3) {
-    left: 58%;
-  }
-  header ul li:nth-child(4) {
-    left: 77%;
+    margin-left: 3%;
   }
   h2 {
     top: 0;
@@ -554,15 +655,32 @@ main {
     width: 95%;
     height: 70%;
   }
-  .content {
-    visibility: hidden;
-  }
   .main-top {
     border: none;
   }
+  .main-top .main-img {
+    display: none;
+  }
+  .main-img {
+    top: -10.5%;
+    left: 0;
+    height: 10%;
+    width: 10%;
+  }
 /*****************↑smart-main↑**************************/
 /************************↑all↑***************************/
-
+/*****************↓smart-top↓**************************/
+  .title, .title a {
+    font: 100 8vh 'Pacifico';
+  }
+   .title + p {
+    color: #aaa;
+    position: absolute;
+    top: 42%;
+    right: 3%;
+    display: block;
+  }
+/*****************↑smart-top↑***************************/
 /*****************↓smart-profile↓**************************/
   .profile-content {
     position: absolute;
@@ -590,7 +708,21 @@ main {
     margin: 2.5%;
   }
 /*****************↑smart-profile↑**************************/
-
+/*****************↓smart-portfolio↓**************************/
+  .portfolio-main-img01, .portfolio-main-img02, .portfolio-main-img03, .portfolio-main-img04, .portfolio-main-img05, .portfolio-main-img06, .portfolio-main-img07 {
+    background-size: contain;
+    margin: 17% auto 1%;
+    width: 90%;
+    height: 40%;
+  }
+  .portfolio-main-img05, .portfolio-main-img06, .portfolio-main-img07 {
+    margin-bottom: 11%;
+  }
+  .accbox label {
+    margin: 0;
+    padding: 10% 0;
+  }
+/*****************↑smart-portfolio↑**************************/
 /*****************↓smart-contact↓**************************/
 label, input {
   width: 98%;
@@ -600,3 +732,11 @@ label, input {
 }
 /*****************↑smart-phone↑**************************/
 /********************************************************/
+@media screen and (max-width: 370px) {
+  header {
+    height: 8%;
+  }
+  header ul li {
+    font-size: 120%;
+  }
+}
