@@ -1,26 +1,22 @@
 /*****************fade-in****************************/
-main {
+.main-top {
     animation: fadeIn 1s ease 0s 1 normal;
     -webkit-animation: fadeIn 1s ease 0s 1 normal;
 }
-
 @keyframes fadeIn {
     0% {
-        opacity: 0
+        opacity: 0;
     }
-
     100% {
-        opacity: 1
+        opacity: 1;
     }
 }
-
 @-webkit-keyframes fadeIn {
     0% {
-        opacity: 0
+        opacity: 0;
     }
-
     100% {
-        opacity: 1
+        opacity: 1;
     }
 }
 /**************blink*****************/
@@ -33,7 +29,7 @@ main {
   display: none;
 }
 .title span{
-  animation: blink linear infinite 10s;
+  animation: blink linear infinite 3s;
   color: white;
 }
 @keyframes blink {
@@ -46,19 +42,19 @@ main {
   }
   80% {
     text-shadow: none;
-  }/*
-  81% {
+  }
+  78% {
     color: inherit;
     text-shadow: inherit;
   }
-  82% {
+  60% {
     color: #ff3e6e;
     text-shadow: none;
   }
-  83% {
+  50% {
     color: inherit;
     text-shadow: inherit;
-  }*/
+  }
 }
 
 /*************↑blink↑****************/
@@ -327,8 +323,8 @@ main {
 .portfolio-main-img01, .portfolio-main-img02, .portfolio-main-img03, .portfolio-main-img04, .portfolio-main-img05, .portfolio-main-img06, .portfolio-main-img07 {
   background-size: contain;
   margin: 15% auto;
-  width: 50%;
-  height: 40%;
+  width: 65%;
+  height: 45%;
   text-indent: -9999px;
 }
 .portfolio-main-img08,
