@@ -508,8 +508,7 @@ form {
     border-radius: 5px;
     height: 98.5%;
   }
-/******************************all↓************************/
-/*****************↓smart-header↓**************************/
+  /*****************↓tablet-header↓**************************/
   header {
     position: fixed;
     bottom: 1.2%;
@@ -531,24 +530,36 @@ form {
   h2 {
     top: 0;
   }
+/*****************↑tablet-header↑**************************/
+/*****************↓tablet-main↓**************************/
+  main {
+    width: 70%;
+  }
   .main-img {
     top: 105%;
-    left: -37%;
+    left: -18%;
     width: 25%;
     height: 25%;
   }
   .title, .title a {
     font: 100 8vh 'Pacifico';
   }
-    .profile-content {
+  .title + p {
+    color: #aaa;
     position: absolute;
-    top: 30%;
-    left: 0;
-    right: 0;
-    height: 70%;
-    width: 80%;
-    font-size: 120%;
-    margin: 0 auto;
+    top: 44%;
+    right: -8%;
+    display: block;
+    font-size: 150%;
+  }
+/*****************↑tablet-main↑**************************/
+  /*****************↓tablet-profile↓**************************/
+  .profile-content {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    height: 60%;
+    width: 90%;
   }
   .profile-illust {
     background: url(../images/back-round04.png) no-repeat;
@@ -556,6 +567,8 @@ form {
     height: 30%;
     background-size: contain;
   }
+/*****************↑tablet-profile↑**************************/
+/*****************↓tablet-portfolio↓**************************/
   .portfolio-main-img01, .portfolio-main-img02, .portfolio-main-img03, .portfolio-main-img04, .portfolio-main-img05, .portfolio-main-img06, .portfolio-main-img07 {
     width: 90%;
     height: 38%;
@@ -583,7 +596,13 @@ form {
   }
   .portfolio-main-p {
     width: 90%;
+    margin-top: 10%;
   }
+  .portfolio-main-subject {
+    margin-top: 5%;
+  }
+/*****************↑tablet-portfolio↑**************************/
+/*****************↓tablet-skill↓**************************/
   .skill-title {
     margin-top: 7%;
     text-align: center;
@@ -597,6 +616,8 @@ form {
     margin-left: 8%;
     margin-bottom: 1%;
   }
+/*****************↑tablet-skill↑**************************/
+/*****************↓tablet-contact↓**************************/
   form {
     left: 13%;
   }
@@ -606,9 +627,19 @@ form {
   .submit {
     right: 5%;
   }
-/*****************↑tablet↑**************************/
 }
+/*****************↑tablet-contact↑**************************/
+/*****************↑tablet↑**************************/
 /********************************************************/
+
+@media screen and (max-width: 800px) {
+  .header a {
+    font-size: 75%;
+  }
+  .profile-content-p {
+    margin: 1% 0 2% 32%;
+  }
+}
 
 /********************************************************/
 /*****************↓smart-phone↓**************************/
